@@ -1,0 +1,44 @@
+/* Pagination container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0;
+}
+
+/* Control buttons */
+.control-btn {
+  background-color: #032541;
+  color: #ffffff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.control-btn:hover {
+  background-color: #065d8c;
+}
+
+/* Page number display */
+.page-no {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #032541;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 500px) {
+  .control-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .page-no {
+    font-size: 14px;
+  }
+}

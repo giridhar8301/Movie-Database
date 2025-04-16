@@ -1,0 +1,36 @@
+/* Page container */
+.route-page-body {
+  background-color: #f7f7f7;
+  min-height: calc(100vh - 80px);
+  padding: 20px;
+}
+
+/* Loader styling */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+/* Movie list grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+  list-style-type: none;
+  padding: 0;
+  gap: 16px;
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 600px) {
+  .route-page-body {
+    padding: 12px;
+  }
+
+  .row {
+    gap: 10px;
+  }
+}

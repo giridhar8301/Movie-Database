@@ -1,0 +1,74 @@
+/* MovieCard component styling */
+
+.movie-card-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  overflow: hidden;
+}
+
+.movie-card-container:hover {
+  transform: translateY(-5px);
+}
+
+.movie-card-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.movie-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.movie-rating {
+  font-size: 14px;
+  color: #ff9800;
+  margin-top: 4px;
+}
+
+.btn-outline-success {
+  margin-top: 10px;
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 767px) {
+  .movie-card-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .movie-title {
+    font-size: 16px;
+  }
+
+  .movie-rating {
+    font-size: 13px;
+  }
+
+  .btn-outline-success {
+    font-size: 13px;
+    padding: 5px 12px;
+  }
+}
+
+/* Desktop adjustments */
+@media screen and (min-width: 768px) {
+  .movie-card-container {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}

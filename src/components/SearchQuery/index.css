@@ -1,0 +1,69 @@
+/* Common page styling */
+.route-page-body {
+  background-color: #f7f7f7;
+  min-height: calc(100vh - 80px);
+  padding: 20px;
+}
+
+/* Loader container */
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+/* Movie list styling */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 0;
+  margin-right: 0;
+  list-style-type: none;
+  padding: 0;
+  gap: 16px;
+}
+
+/* Empty view styling */
+.empty-view-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.empty-view-container h1 {
+  font-size: 28px;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.empty-view-container p {
+  font-size: 18px;
+  color: #666;
+  margin: 0;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 600px) {
+  .route-page-body {
+    padding: 12px;
+  }
+
+  .row {
+    gap: 10px;
+  }
+
+  .empty-view-container {
+    padding: 20px 15px;
+  }
+
+  .empty-view-container h1 {
+    font-size: 24px;
+  }
+
+  .empty-view-container p {
+    font-size: 16px;
+  }
+}
