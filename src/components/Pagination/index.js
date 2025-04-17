@@ -44,19 +44,17 @@ class Pagination extends React.Component {
 
   render() {
     const {pageNo} = this.state
-    const {totalPages} = this.props
 
     return (
       <div className="pagination-container">
-  <button type="button" className="control-btn" onClick={this.onPrevPage}>
-    Prev
-  </button>
-  <p className="page-no">{pageNo}</p>
-  <button type="button" className="control-btn" onClick={this.onNextPage}>
-    Next
-  </button>
-</div>
-
+        <button type="button" className="control-btn" onClick={this.onPrevPage}>
+          Prev
+        </button>
+        <p className="page-no">{pageNo}</p>
+        <button type="button" className="control-btn" onClick={this.onNextPage}>
+          Next
+        </button>
+      </div>
     )
   }
 }

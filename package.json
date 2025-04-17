@@ -1,4 +1,5 @@
 {
+  "homepage": "https://giridhar8301.github.io/new-movie-database",
   "name": "app-name",
   "private": true,
   "version": "1.0.0",
@@ -20,10 +21,11 @@
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-prettier": "3.3.1",
+    "gh-pages": "6.3.0",
     "husky": "4.3.8",
     "lint-staged": "10.5.4",
-    "npm-run-all": "4.1.5",
     "msw": "0.35.0",
+    "npm-run-all": "4.1.5",
     "prettier": "2.2.1",
     "react-scripts": "4.0.3"
   },
@@ -34,7 +36,9 @@
     "lint": "eslint .",
     "lint:fix": "eslint --fix src/",
     "format": "prettier --write \"./src\"",
-    "run-all": "npm-run-all --parallel test lint:fix"
+    "run-all": "npm-run-all --parallel test lint:fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "lint-staged": {
     "*.js": [

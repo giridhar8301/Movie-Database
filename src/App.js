@@ -5,7 +5,6 @@ import Popular from './components/Popular'
 import TopRated from './components/TopRated'
 import Upcoming from './components/Upcoming'
 import SearchQuery from './components/SearchQuery'
-import MovieDetails from './components/MovieDetails'
 
 import SearchMoviesContext from './context/SearchMoviesContext'
 
@@ -58,7 +57,6 @@ const App = () => {
           <Route exact path="/top-rated" component={TopRated} />
           <Route exact path="/upcoming" component={Upcoming} />
           <Route exact path="/search" component={SearchQuery} />
-          <Route exact path="/movie/:id" element={MovieDetails} />
         </Switch>
       </div>
     </SearchMoviesContext.Provider>
